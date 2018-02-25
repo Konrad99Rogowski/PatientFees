@@ -14,7 +14,6 @@ class PatientAccount{
   }
   
   void UpdatePatient(int d){
-    cost = 0;
     days = d;
     cost += days * DAILY_RATE;
   }
