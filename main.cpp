@@ -1,32 +1,50 @@
 #include <iostream>
 #include <string>
-#include "PatientAccount.h"
-#include "Med.h"
-#include "Surgery.h"
-
+#include "med.h"
 using namespace std;
 
-int main(float totalCost, float totalCost1, float totalCost2)
+Pharmacy::Pharmacy(double mc = 0, string mn = " ")
 {
-	float totalCost3;
+	medCost = mc;
+	medName = mn;
+};
 
-	PatientAccount patient;
-	Surgery patient1;
-	Med patient2;
+double Pharmacy::getMedCost()
+{
+	cout << "Enter the cost of the mdeciation: $";
+	cin >> medCost;
 
-	patient.getPatientDisplay(totalCost);
-	patient1.getSurgeryDisplay(totalCost1);
-	patient2.getPharmacyDisplay(totalCost2);
-
-	totalCost3 = ((totalCost + totalCost2) + totalCost2);
-	cout << "**********************************";
-	
-	"Total Cost Hospital:     $" << totalCost3 << endl;
-  cout << "**********************************";
-  cout << "\n";
-	cout << endl << "Press ENTER exit the menu";
-	cin.clear();
-	cin.get();  
-
-	return 0;
+	return medCost;
 }
+
+string Pharmacy::getMedName()
+{
+	cout << "Enter the medication name: ";
+	getline(cin, medName);
+
+	return medName;
+}
+
+int main(double totalCost2){
+  
+  Pharmacy patient2;
+  
+  patient2.getPharmacyDisplay(totalCost2);
+  
+  
+  
+  
+  
+  
+  return 0;
+}
+
+
+
+
+
+
+
+
+
+
