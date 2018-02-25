@@ -22,8 +22,8 @@ int main(float totalCost, float totalCost1, float totalCost2)
 	cout << "**********************************";
 	
 	"Total Cost Hospital:     $" << totalCost3 << endl;
-  cout << "**********************************";
-  cout << "\n";
+  	cout << "**********************************";
+  	cout << "\n";
 	cout << endl << "Press ENTER exit the menu";
 	cin.clear();
 	cin.get();  
