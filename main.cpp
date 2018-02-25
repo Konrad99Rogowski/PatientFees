@@ -3,10 +3,22 @@
 using namespace std;
 
 int main(){
+    int d;
+    int s;
+    int m;
+    
     PatientAccount p1;
-    p1.UpdatePatient(5);
-    p1.addSurgery(4);
+    //get number of days
+    cin >> days;
+    p1.UpdatePatient(d);
+    
+    //show surgery list and get number
+    cin >> s
+    p1.addSurgery(s);
+    
+    //show medication list and get number
+    cin >> m
     p1.addMedication(5);
-    cout<<p1.getCost()<<endl;
+    cout<<"Total $"<<p1.getCost()<<endl;
     
 }
