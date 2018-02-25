@@ -8,7 +8,7 @@ class PatientAccount{
   private:
   double cost;
   int days;
-  const double DAILY_RATE = 200;
+  const double DAILY_RATE = 200.0;
   
   public:
   PatientAccount(){
