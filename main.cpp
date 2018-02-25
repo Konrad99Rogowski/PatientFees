@@ -9,7 +9,7 @@ int main(){
     
     PatientAccount p1;
     //get number of days
-    cin >> days;
+    cin >> d;
     p1.UpdatePatient(d);
     
     //show surgery list and get number
