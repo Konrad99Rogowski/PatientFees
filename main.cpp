@@ -18,7 +18,7 @@ int main(){
     
     //show medication list and get number
     cin >> m
-    p1.addMedication(5);
+    p1.addMedication(m);
     cout<<"Total $"<<p1.getCost()<<endl;
     
 }
